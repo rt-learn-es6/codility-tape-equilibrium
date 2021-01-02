@@ -28,7 +28,9 @@ describe('Solution', () => {
     for (let i = 0; i < dataTable.length; i += 1) {
       describe(`when given ${dataTable[i].input}`, () => {
         it(`returns ${dataTable[i].expected}`, () => {
-          expect(Solution.solution(dataTable[i].input)).to.eq(dataTable[i].expected)
+          expect(Solution.solution(dataTable[i].input)).to.eq(
+            dataTable[i].expected
+          )
         })
       })
     }
