@@ -1,0 +1,36 @@
+{
+  "name": "codility-tape-equilibrium",
+  "version": "1.0.0",
+  "main": "solution.js",
+  "repository": "git@github.com:rt-learn-es6/codility-tape-equilibrium.git",
+  "author": "Royce Remulla <royce.com@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "chai": "^4.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-chai-friendly": "^0.5.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "mocha": "^8.2.1",
+    "npm-watch": "^0.6.0",
+    "prettier": "^2.0.2",
+    "sinon": "^9.0.1"
+  },
+  "watch": {
+    "test": "{test,src}/**/*.{js,json}"
+  },
+  "scripts": {
+    "start": "babel-node src/solution.js",
+    "babel-version": "babel --version",
+    "test": "mocha --require @babel/register test/solution.spec.js",
+    "watch": "npm-watch"
+  }
+}
